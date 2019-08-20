@@ -2,6 +2,8 @@
 
 pamac install snapd termite powerline-common rustup vim
 
+pamac install zip unzip p7zip
+
 pamac build whalebird-desktop google-chrome logtop
 
 mkdir -p ~/.config/termite
@@ -24,6 +26,12 @@ snap install slack --classic
 
 snap install spotify
 
+curl -s "https://get.sdkman.io" | bash
+
 chsh -s /usr/bin/fish
 
 fisher add oh-my-fish/theme-bobthefish
+
+fisher add reitzig/sdkman-for-fish
+
+sdk install java 8.0.222-zulu
