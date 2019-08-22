@@ -1,8 +1,6 @@
 #!/usr/bin/bash
 
-pamac install snapd termite powerline-common rustup vim
-
-pamac install zip unzip p7zip
+pamac install snapd termite powerline-common rustup vim xscreensaver zip unzip p7zip
 
 pamac build whalebird-desktop google-chrome logtop
 
@@ -11,6 +9,19 @@ mkdir -p ~/.config/termite
 cp termite_config ~/.config/termite/config
 
 cp i3_config ~/.i3/config
+
+cp mimeapps.list ~/.config
+
+cp profile ~/.profile
+
+cp vim.fish ~/.config/fish/conf.d
+
+cp vimrc ~/.vimrc
+
+#vimplug
+#after installing, execute vim and do :PlugInstall
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 sudo cp usr_share_conky_conky1.10_shortcuts_green /usr/share/conky/conky1.10_shortcuts_gree
 
