@@ -41,6 +41,8 @@ curl -s "https://get.sdkman.io" | bash
 
 chsh -s /usr/bin/fish
 
+fish_vi_keybindings
+
 fisher add oh-my-fish/theme-bobthefish
 
 fisher add reitzig/sdkman-for-fish
