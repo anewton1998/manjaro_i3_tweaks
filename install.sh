@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+pacman-mirrors -g
+
 pamac install snapd termite powerline-common rustup vim xscreensaver zip unzip p7zip
 
 pamac build whalebird-desktop google-chrome logtop
