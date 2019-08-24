@@ -14,6 +14,10 @@ cp i3_config ~/.i3/config
 
 cp mimeapps.list ~/.config
 
+gio mime x-scheme-handler/http google-chrome.desktop
+
+gio mime x-scheme-handler/https google-chrome.desktop
+
 cp profile ~/.profile
 
 cp vim.fish ~/.config/fish/conf.d
