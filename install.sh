@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-pacman-mirrors -g
+sudo pacman-mirrors -g
 
 pamac install snapd termite powerline-common rustup vim xscreensaver zip unzip p7zip
 
