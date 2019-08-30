@@ -2,7 +2,7 @@
 
 sudo pacman-mirrors -g
 
-pamac install snapd termite powerline-common rustup vim xscreensaver zip unzip p7zip
+pamac install snapd termite powerline-common rustup vim xscreensaver zip unzip p7zip fish fisherman
 
 pamac build whalebird-desktop google-chrome logtop
 
@@ -20,7 +20,9 @@ gio mime x-scheme-handler/https google-chrome.desktop
 
 cp profile ~/.profile
 
-cp vim.fish ~/.config/fish/conf.d
+mkdir -p ~/.config/fish
+
+cp vim.fish ~/.config/fish/conf.d/
 
 cp vimrc ~/.vimrc
 
@@ -49,8 +51,8 @@ chsh -s /usr/bin/fish
 
 fish_vi_keybindings
 
-fisher add oh-my-fish/theme-bobthefish
+fisher oh-my-fish/theme-bobthefish
 
-fisher add reitzig/sdkman-for-fish
+fisher reitzig/sdkman-for-fish
 
 sdk install java 8.0.222-zulu
