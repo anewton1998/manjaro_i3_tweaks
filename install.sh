@@ -20,6 +20,8 @@ gio mime x-scheme-handler/https google-chrome.desktop
 
 cp profile ~/.profile
 
+cp termite.fish ~/.config/fish/conf.d
+
 cp vim.fish ~/.config/fish/conf.d
 
 cp vimrc ~/.vimrc
